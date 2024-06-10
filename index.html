@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="en" style="background: #171717;">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>Minecraft.tn WEBSITE</title>
+        <meta name="description" content="THE #1 TUNISIAN MINECRAFT SERVER">
+        <link rel="icon" type="image/png" sizes="1920x1067" href="img/logo.png">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="fonts/fontawesome5-overrides.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    </head>
+    <body style="background: rgb(23,23,23);">
+        <nav style="background: #171717;padding: 2rem;">
+            <div class="container">
+                <div class="row" id="title-row" style="text-transform: uppercase; font-style: bold;">
+                    <div class="col-md-4 d-flex invisible" data-aos="fade-right" data-aos-duration="350" data-aos-delay="400" id="left" onclick="showCopied();" data-clipboard-text="play.minecraft.tn">
+                        <div class="d-md-flex justify-content-md-center align-items-md-center visible" data-bs-toggle="tooltip" data-bss-tooltip="" data-bs-placement="bottom" style="border-radius: 25px;" title="Click to copy !">
+                            <img src="img/logo.png" style="width: 4rem;background: #ff0000;border-radius: 1rem;margin-right: 15px;padding: 0.4rem;">
+                            <div class="col">
+                                <h1 id="copied" style="font-size: 1.5rem;color: rgb(237,237,237);font-family: 'VT323';">play.minecraft.tn</h1>
+                                <p style="color: #9E9C9C;font-size: 1rem;">
+                                    <span data-playercounter-ip="play.minecraft.tn">0</span>
+                                    &nbsp;PLAYERS ONLINE
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-md-flex d-lg-flex d-xl-flex d-xxl-flex align-items-center align-content-center justify-content-sm-center align-items-sm-center align-items-md-center align-items-lg-center align-items-xl-center justify-content-xxl-center align-items-xxl-center" data-aos="fade-down" data-aos-duration="650" data-aos-delay="100" data-aos-once="true">
+                        <img data-bss-hover-animate="pulse" id="image" src="img/text.png">
+                    </div>
+                    <div class="col-md-4" data-aos="fade-left" data-aos-duration="350" data-aos-delay="400" id="right" data-clipboard-text="discord.gg/mctn" onclick="showCopiedDiscord();">
+                        <div class="d-flex d-xxl-flex justify-content-xl-center align-items-xl-center justify-content-xxl-center align-items-xxl-center" data-bs-toggle="tooltip" data-bss-tooltip="" data-bs-placement="bottom" title="Click to visit !">
+                            <div class="col" style="text-align: right;margin: .5rem;">
+                                <h1 id="discord" style="font-size: 1.5rem;color: rgb(237,237,237);">Discord.gg/MC-Tn</h1>
+                                <p style="color: #9E9C9C;font-size: 1rem;">
+                                    &nbsp;<span id="discord-count">0</span>
+                                    &nbsp;MEMBERS ONLINE
+                                </p>
+                            </div>
+                            <div class="d-xl-flex justify-content-xl-center align-items-xl-center" style="border-radius: 1rem;width: 4rem;height: 4rem;background: #ff0000;">
+                                <i class="fab fa-discord" style="transform: scale(2.50);color: rgb(255,255,255);"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12" style="padding: 2rem;padding-right: 0px;padding-left: 0px;">
+                        <nav class="navbar navbar-light navbar-expand-md text-center" data-aos="zoom-in-up" data-aos-duration="250" data-aos-delay="100" style="background: #ff0000;border-radius: 2rem;">
+                            <div class="container-fluid">
+                                <button data-bs-toggle="collapse" class="navbar-toggler pull-right" data-bs-target="#navcol-1">
+                                    <span class="visually-hidden">Toggle navigation</span>
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse d-md-flex d-lg-flex d-xl-flex d-xxl-flex justify-content-md-center align-items-md-center justify-content-lg-center align-items-lg-center justify-content-xl-center align-items-xl-center justify-content-xxl-center align-items-xxl-center" id="navcol-1">
+                                    <ul class="navbar-nav d-lg-flex justify-content-lg-center align-items-lg-center">
+                                        <li class="nav-item" id="ni">
+                                            <a class="nav-link active" href="#home" style="font-size: 1.5rem;color: rgb(238,238,238);margin-right: 1rem;margin-left: 1rem;">Home</a>
+                                        </li>
+                                        <li class="nav-item" id="ni">
+                                            <a class="nav-link active" href="#about" style="font-size: 1.5rem;color: rgb(238,238,238);margin-right: 1rem;margin-left: 1rem;">About</a>
+                                        </li>
+                                        <li class="nav-item" id="ni">
+                                            <a class="nav-link active" href="#staff" style="font-size: 1.5rem;color: rgb(238,238,238);margin-right: 1rem;margin-left: 1rem;">Staff</a>
+                                        </li>
+                                        <li class="nav-item" id="ni">
+                                            <a class="nav-link active" href="#ranks" style="font-size: 1.5rem;color: rgb(238,238,238);margin-right: 1rem;margin-left: 1rem;">Ranks</a>
+                                        </li>
+                                        <li class="nav-item" id="ni">
+                                            <a class="nav-link active" href="#" style="font-size: 1.5rem;color: rgb(238,238,238);margin-right: 1rem;margin-left: 1rem;">Donations</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="d-xxl-flex justify-content-xxl-center align-items-xxl-center" id="home" style="background: #171717;">
+            <div class="container-fluid text-center justify-content-xxl-center align-items-xxl-center position-absolute z-index">
+                <div class="row" style="padding: 10px;margin: 10px;">
+                    <div class="col-md-12">
+                        <p data-aos="fade-up" data-aos-duration="200" data-aos-delay="200" data-aos-once="true" style="color: rgb(199,199,199);font-size: 5vw;text-shadow: 4px 4px 18px var(--bs-gray-dark);">WELCOME TO</p>
+                    </div>
+                </div>
+                <div class="row" style="padding: 10px;margin: 10px;">
+                    <div class="col-md-12">
+                        <h1 data-aos="fade-up" data-aos-duration="700" data-aos-delay="400" style="margin-bottom: 0px;color: rgb(255,255,255);font-size: 8vw;text-shadow: 4px 4px 18px var(--bs-gray-dark);">MINECRAFT.TN</h1>
+                    </div>
+                </div>
+                <div class="row" style="padding: 10px;margin: 10px;">
+                    <div class="col-md-12">
+                        <h1 style="margin-bottom: 0px;color: rgb(199,199,199);font-size: 2vw;text-shadow: 4px 4px 18px var(--bs-gray-dark);" data-aos="fade-up">The #1 Tunisian Server</h1>
+                    </div>
+                </div>
+            </div>
+            <img class="img-fluid bg-image" src="img/15 (1).gif" style="opacity: 0.60;background: #171717;height: 100%;width: 100vw;filter: blur(5px);" loading="lazy">
+        </div>
+        <div class="container-fluid" id="about" style="padding: 2rem;margin: 1rem;margin-top: 4rem;margin-bottom: 4rem;margin-left: 0px;margin-right: 0px;">
+            <div class="row">
+                <div class="col-md-6" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="400" style="margin-top: 20px;margin-bottom: 20px;">
+                    <h1 style="color: rgb(255,255,255);text-align: center;">About Us :</h1>
+                    <p class="text-center" style="color: rgb(255,255,255);text-align: center;font-size: 20px;">
+                        MinecraftTN is a 24/7 online Tunisian server.<br>
+                        We offer many types of games including Survival,<br>
+                        Minigames, Towny and more to come !!<br>
+                        Our server is updated frequently with<br>
+                        the latest versions of minecraft.<br>
+                        Everyone is welcome in our server,<br>
+                        whilst following the rules mentioned &nbsp;<a class="link-danger" data-target="#modal-1" data-bs-target="#modal-1" data-bs-toggle="modal" href="#">HERE !</a>
+                        &nbsp;.
+                    </p>
+                </div>
+                <div class="col-md-6" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="550" style="text-align: center;margin-top: 20px;margin-bottom: 20px;">
+                    <div class="row">
+                        <div class="col">
+                            <h1 style="color: rgb(255,255,255);">CHAT RULES</h1>
+                            <p style="color: rgb(255,255,255);font-size: 20px;">
+                                Read more about our chat rules &nbsp;<a href="#" style="color: var(--bs-red);" data-bs-target="#modal-2" data-bs-toggle="modal">HERE !</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h1 style="color: rgb(255,255,255);">DISCORD RULES</h1>
+                            <p style="font-size: 20px;color: rgb(255,255,255);">
+                                Read more about discord chat rules &nbsp;<a href="#" style="color: var(--bs-red);" data-bs-target="#modal-3" data-bs-toggle="modal">HERE !</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div style="height: 5px;background: #ff0000;border-radius: 1rem;"></div>
+        </div>
+        <div id="staff" style="width: 100%;background: rgb(33,37,41);padding: 31px 0px 0px;padding-top: 2rem;padding-bottom: 4rem;font-size: 2rem;margin-top: 5rem;">
+            <div class="container">
+                <h1 data-aos="fade-down" style="color: #ffffff;font-size: 60px;text-align: center;margin-top: 4rem;margin-bottom: 4rem;text-decoration: underline;">STAFF TEAM</h1>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4" style="font-size: 38px;">
+                        <p data-aos="fade-right" data-aos-duration="250" data-aos-delay="100" style="font-size: 2rem;border-style: none;text-align: left;color: rgb(255,255,255);">
+                            <span style="color: rgb(255, 255, 255); background-color: rgb(33, 37, 41);">We have a wide variety of staff to help you at any given moment, just hop on discord #help channel and ask your questions, or submit a ticket in #tickets !</span>
+                            <br>
+                            <br>
+                        </p>
+                    </div>
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <ul style="font-size: 1.5rem;">
+                            <li data-aos="zoom-in" data-aos-duration="400" data-aos-delay="200" style="color: #750202;font-weight: bold;font-size: 26px;">Owner</li>
+                            <li data-aos="zoom-in" data-aos-duration="400" data-aos-delay="500" style="color: #992d22;font-weight: bold;font-size: 26px;">Head Staff</li>
+                            <li data-aos="zoom-in" data-aos-duration="400" data-aos-delay="800" style="color: #750202;font-weight: bold;font-size: 26px;">Admins</li>
+                            <li data-aos="zoom-in" data-aos-duration="400" data-aos-delay="1100" style="color: #08027d;font-weight: bold;font-size: 26px;">Mods</li>
+                            <li data-aos="zoom-in" data-aos-duration="400" data-aos-delay="1400" style="color: #026f02;font-weight: bold;font-size: 26px;">Helpers</li>
+                            <li data-aos="zoom-in" data-aos-duration="400" data-aos-delay="1700" style="color: #008080;font-weight: bold;font-size: 26px;">Builders</li>
+                            <li data-aos="zoom-in" data-aos-duration="400" data-aos-delay="2000" style="color: #eb1f1f;font-weight: bold;font-size: 26px;">Developers</li>
+                            <li data-aos="zoom-in" data-aos-duration="400" data-aos-delay="2300" style="color: #d6680e;font-weight: bold;font-size: 26px;">Designers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="ranks" style="margin-top: 5rem;">
+            <div id="survival-mode">
+                <div class="container" data-aos="fade" data-aos-duration="250">
+                    <h1 style="color: rgb(255,255,255);text-align: center;margin-bottom: 2rem;font-size: 60px;">SURVIVAL RANKS</h1>
+                </div>
+                <div class="container" data-aos="zoom-in" data-aos-duration="450" >
+                    <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+                        <div class="col-md-3" style="padding-top: 12px;padding-bottom: 12px;">
+                            <div class="card" style="background: rgb(33,37,41);color: rgb(255,255,255);height: 100%;">
+                                <img class="img-fluid card-img-top w-100 d-block" src="img/ranks/coal.png" style="padding: 2rem;">
+                                <div class="card-body">
+                                    <h4 class="card-title">COAL RANK</h4>
+                                    <button class="btn btn-danger" type="button" data-bs-target="#modal-4" data-bs-toggle="modal">Rank Perks</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3" style="padding-top: 12px;padding-bottom: 12px;">
+                            <div class="card" style="background: rgb(33,37,41);color: rgb(255,255,255);height: 100%;">
+                                <img class="img-fluid card-img-top w-100 d-block" src="img/ranks/copper.png" style="padding: 2rem;">
+                                <div class="card-body">
+                                    <h4 class="card-title">COPPER RANK</h4>
+                                    <button class="btn btn-danger" type="button" data-bs-target="#modal-5" data-bs-toggle="modal">Rank Perks</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3" style="padding-top: 12px;padding-bottom: 12px;">
+                            <div class="card" style="background: rgb(33,37,41);color: rgb(255,255,255);height: 100%;">
+                                <img class="img-fluid card-img-top w-100 d-block" src="img/ranks/iron.png" style="padding: 2rem;">
+                                <div class="card-body">
+                                    <h4 class="card-title">IRON RANK</h4>
+                                    <button class="btn btn-danger" type="button" data-bs-target="#modal-6" data-bs-toggle="modal">Rank Perks</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3" style="padding-top: 12px;padding-bottom: 12px;">
+                            <div class="card" style="background: rgb(33,37,41);color: rgb(255,255,255);">
+                                <img class="img-fluid card-img-top w-100 d-block" src="img/ranks/lapis.png" style="padding: 2rem;">
+                                <div class="card-body">
+                                    <h4 class="card-title">LAPIS RANK</h4>
+                                    <button class="btn btn-danger" type="button" data-bs-target="#modal-7" data-bs-toggle="modal">Rank Perks</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container" data-aos="zoom-in" data-aos-duration="450" id="1st-survival" >
+                    <div class="row row-cols-2 row-cols-sm-2 row-cols-md-2 row-cols-lg-4" style="margin-bottom: 12px;">
+                        <div class="col-md-3" style="padding-top: 12px;padding-bottom: 12px;">
+                            <div class="card" style="background: rgb(33,37,41);color: rgb(255,255,255);">
+                                <img class="img-fluid card-img-top w-100 d-block" src="img/ranks/prismarine.png" style="padding: 2rem;">
+                                <div class="card-body">
+                                    <h4 class="card-title">PRISMARINE RANK</h4>
+                                    <button class="btn btn-danger" type="button" data-bs-target="#modal-8" data-bs-toggle="modal">Rank Perks</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3" style="padding-top: 12px;padding-bottom: 12px;">
+                            <div class="card" style="background: rgb(33,37,41);color: rgb(255,255,255);">
+                                <img class="img-fluid card-img-top w-100 d-block" src="img/ranks/gold.png" style="padding: 2rem;">
+                                <div class="card-body">
+                                    <h4 class="card-title">GOLD RANK</h4>
+                                    <button class="btn btn-danger" type="button" data-bs-target="#modal-9" data-bs-toggle="modal">Rank Perks</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3" style="padding-top: 12px;padding-bottom: 12px;">
+                            <div class="card" style="background: rgb(33,37,41);color: rgb(255,255,255);">
+                                <img class="img-fluid card-img-top w-100 d-block" src="img/ranks/quartz.png" style="padding: 2rem;">
+                                <div class="card-body">
+                                    <h4 class="card-title">QUARTZ RANK</h4>
+                                    <button class="btn btn-danger" type="button" data-bs-target="#modal-10" data-bs-toggle="modal">Rank Perks</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3" style="padding-top: 12px;padding-bottom: 12px;">
+                            <div class="card" style="background: rgb(33,37,41);color: rgb(255,255,255);">
+                                <img class="img-fluid card-img-top w-100 d-block" src="img/ranks/emethyst.png" style="padding: 2rem;">
+                                <div class="card-body">
+                                    <h4 class="card-title">EMETHYST RANK</h4>
+                                    <button class="btn btn-danger" type="button" data-bs-target="#modal-11" data-bs-toggle="modal">Rank Perks</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container" data-aos="zoom-in" data-aos-duration="450" id="2nd-survival">
+                    <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4" >
+                        <div class="col-md-3" style="margin-bottom: 12px;margin-top: 12px;">
+                            <div class="card" style="background: rgb(33,37,41);color: rgb(255,255,255);">
+                                <img class="img-fluid card-img-top w-100 d-block" src="img/ranks/diamond.png" style="padding: 2rem;">
+                                <div class="card-body">
+                                    <h4 class="card-title">DIAMOND RANK</h4>
+                                    <button class="btn btn-danger" type="button" data-bs-target="#modal-12" data-bs-toggle="modal">Rank Perks</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3" style="margin-bottom: 12px;margin-top: 12px;">
+                            <div class="card" style="background: rgb(33,37,41);color: rgb(255,255,255);">
+                                <img class="img-fluid card-img-top w-100 d-block" src="img/ranks/emerald.png" style="padding: 2rem;">
+                                <div class="card-body">
+                                    <h4 class="card-title">EMERALD RANK</h4>
+                                    <button class="btn btn-danger" type="button" data-bs-target="#modal-13" data-bs-toggle="modal">Rank Perks</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3" style="margin-bottom: 12px;margin-top: 12px;">
+                            <div class="card" style="background: rgb(33,37,41);color: rgb(255,255,255);">
+                                <img class="img-fluid card-img-top w-100 d-block" src="img/ranks/netherite.png" style="padding: 2rem;">
+                                <div class="card-body">
+                                    <h4 class="card-title">NETHERITE RANK</h4>
+                                    <button class="btn btn-danger" type="button" data-bs-target="#modal-14" data-bs-toggle="modal">Rank Perks</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-none" id="skyblock-mode">
+                <div class="container" data-aos="fade" data-aos-duration="250">
+                    <h1 style="color: rgb(255,255,255);text-align: center;margin-bottom: 2rem;font-size: 60px;">SKYBLOCK RANKS</h1>
+                </div>
+                <div class="container" data-aos="zoom-in" data-aos-duration="450" >
+                    <div class="row">
+                        <div class="col-md-3" style="padding-top: 12px;padding-bottom: 12px;">
+                            <div class="card" style="background: rgb(33,37,41);color: rgb(255,255,255);height: 100%;">
+                                <img class="img-fluid card-img-top w-100 d-block" src="img/ranks/coal.png" style="padding: 2rem;">
+                                <div class="card-body">
+                                    <h4 class="card-title">THIEF RANK</h4>
+                                    <button class="btn btn-danger" type="button" data-bs-target="#modal-15" data-bs-toggle="modal">Rank Perks</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3" style="padding-top: 12px;padding-bottom: 12px;">
+                            <div class="card" style="background: rgb(33,37,41);color: rgb(255,255,255);height: 100%;">
+                                <img class="img-fluid card-img-top w-100 d-block" src="img/ranks/copper.png" style="padding: 2rem;">
+                                <div class="card-body">
+                                    <h4 class="card-title">KNIGHT RANK</h4>
+                                    <button class="btn btn-danger" type="button" data-bs-target="#modal-16" data-bs-toggle="modal">Rank Perks</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3" style="padding-top: 12px;padding-bottom: 12px;">
+                            <div class="card" style="background: rgb(33,37,41);color: rgb(255,255,255);height: 100%;">
+                                <img class="img-fluid card-img-top w-100 d-block" src="img/ranks/iron.png" style="padding: 2rem;">
+                                <div class="card-body">
+                                    <h4 class="card-title">DEMON RANK</h4>
+                                    <button class="btn btn-danger" type="button" data-bs-target="#modal-17" data-bs-toggle="modal">Rank Perks</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3" style="padding-top: 12px;padding-bottom: 12px;">
+                            <div class="card" style="background: rgb(33,37,41);color: rgb(255,255,255);">
+                                <img class="img-fluid card-img-top w-100 d-block" src="img/ranks/lapis.png" style="padding: 2rem;">
+                                <div class="card-body">
+                                    <h4 class="card-title">ANGEL RANK</h4>
+                                    <button class="btn btn-danger" type="button" data-bs-target="#modal-18" data-bs-toggle="modal">Rank Perks</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container" data-aos="zoom-in" data-aos-duration="450" id="1st-skyblock" >
+                    <div class="row" style="margin-bottom: 12px;">
+                        <div class="col-md-3" style="padding-top: 12px;padding-bottom: 12px;">
+                            <div class="card" style="background: rgb(33,37,41);color: rgb(255,255,255);">
+                                <img class="img-fluid card-img-top w-100 d-block" src="img/ranks/prismarine.png" style="padding: 2rem;">
+                                <div class="card-body">
+                                    <h4 class="card-title">ARCHANGEL RANK</h4>
+                                    <button class="btn btn-danger" type="button" data-bs-target="#modal-19" data-bs-toggle="modal">Rank Perks</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="text-align: center;padding: 2rem;margin-top: 4rem;">
+                <div class="row">
+                    <div class="col">
+                        <button class="btn btn-danger" id="showmore-1" type="button" onclick="showMore();" >SHOW MORE</button>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-danger" id="switchMode" type="button" onclick="switchMode();" >SKYBLOCK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="premium-ranks" style="width: 100%;background: rgb(33,37,41);padding: 31px 0px 0px;padding-top: 2rem;padding-bottom: 4rem;font-size: 2rem;margin-top: 5rem;">
+            <div class="container">
+                <h1 style="color: #ffffff;font-size: 60px;text-align: center;margin-top: 4rem;margin-bottom: 4rem;text-decoration: underline;">Premium ranks</h1>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4" style="font-size: 38px;padding: 1rem;">
+                        <h1 style="color: rgb(255,255,255);text-align: center;">Survival</h1>
+                        <div class="d-flex">
+                            <div class="card premium-card" style="margin: 0.5rem;background: rgb(23,23,23);">
+                                <img class="card-img w-100 d-block card-img" src="img/ranks/knight.png">
+                                <div class="card-img-overlay">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h4 class="rank-text" style="color: rgb(255,255,255);text-align: center;font-size: 60%;">KNIGHT</h4>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <p class="rank-text" style="text-align: center;font-size: 2rem;color: white;">5$</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card premium-card" style="margin: 0.5rem;background: rgb(23,23,23);">
+                                <img class="card-img w-100 d-block card-img" src="img/ranks/paladin.png">
+                                <div class="card-img-overlay">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h4 class="rank-text" style="color: rgb(255,255,255);text-align: center;font-size: 20.48px;">PALADIN</h4>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <p class="rank-text" style="text-align: center;font-size: 2rem;color: white;">10$</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card premium-card" style="margin: 0.5rem;background: rgb(23,23,23);">
+                                <img class="card-img w-100 d-block card-img" src="img/ranks/hero.png">
+                                <div class="card-img-overlay">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h4 class="rank-text" style="color: rgb(255,255,255);text-align: center;font-size: 60%;">HERO</h4>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <p class="rank-text" style="text-align: center;font-size: 2rem;color: white;">15$</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="card premium-card" style="margin: 0.5rem;background: rgb(23,23,23);">
+                                <img class="card-img w-100 d-block" src="img/ranks/elite.png">
+                                <div class="card-img-overlay">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h4 class="rank-text" style="color: rgb(255,255,255);text-align: center;font-size: 60%;">ELITE</h4>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <p class="rank-text" style="text-align: center;font-size: 2rem;color: white;">25$</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card premium-card" style="margin: 0.5rem;background: rgb(23,23,23);">
+                                <img class="card-img w-100 d-block" src="img/ranks/lord.png">
+                                <div class="card-img-overlay">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h4 class="rank-text" style="color: rgb(255,255,255);text-align: center;font-size: 60%;">LORD</h4>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <p class="rank-text" style="text-align: center;font-size: 2rem;color: white;">35$</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card premium-card" style="margin: 0.5rem;background: rgb(23,23,23);">
+                                <img class="card-img w-100 d-block" src="img/ranks/warden.png">
+                                <div class="card-img-overlay">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h4 class="rank-text" style="color: rgb(255,255,255);text-align: center;font-size: 60%;">WARDEN</h4>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <p class="rank-text" style="text-align: center;font-size: 2rem;color: white;">45$</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" style="padding: 1rem;"></div>
+                    <div class="col-md-4" style="font-size: 38px;padding: 1rem;">
+                        <h1 style="color: rgb(255,255,255);text-align: center;">SKYBLOCK</h1>
+                        <div class="d-flex">
+                            <div class="card premium-card" style="margin: 0.5rem;background: rgb(23,23,23);">
+                                <img class="card-img w-100 d-block card-img" src="img/ranks/knight.png">
+                                <div class="card-img-overlay d-md-flex justify-content-md-center align-items-md-center">
+                                    <h4 class="rank-text" style="color: rgb(255,255,255);text-align: center;">KNIGHT</h4>
+                                </div>
+                            </div>
+                            <div class="card premium-card" style="margin: 0.5rem;background: rgb(23,23,23);">
+                                <img class="card-img w-100 d-block card-img" src="img/ranks/paladin.png">
+                                <div class="card-img-overlay d-md-flex justify-content-md-center align-items-md-center">
+                                    <h4 class="rank-text" style="color: rgb(255,255,255);text-align: center;">PALADIN</h4>
+                                </div>
+                            </div>
+                            <div class="card premium-card" style="margin: 0.5rem;background: rgb(23,23,23);">
+                                <img class="card-img w-100 d-block card-img" src="img/ranks/hero.png">
+                                <div class="card-img-overlay d-md-flex justify-content-md-center align-items-md-center">
+                                    <h4 class="rank-text" style="color: rgb(255,255,255);text-align: center;">HERO</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="card premium-card" style="margin: 0.5rem;background: rgb(23,23,23);">
+                                <img class="card-img w-100 d-block" src="img/ranks/elite.png">
+                                <div class="card-img-overlay d-md-flex justify-content-md-center align-items-md-center">
+                                    <h4 class="rank-text" style="color: rgb(255,255,255);text-align: center;">ELITE</h4>
+                                </div>
+                            </div>
+                            <div class="card premium-card" style="margin: 0.5rem;background: rgb(23,23,23);">
+                                <img class="card-img w-100 d-block" src="img/ranks/lord.png">
+                                <div class="card-img-overlay d-md-flex justify-content-md-center align-items-md-center">
+                                    <h4 class="rank-text" style="color: rgb(255,255,255);text-align: center;">LORD</h4>
+                                </div>
+                            </div>
+                            <div class="card premium-card" style="margin: 0.5rem;background: rgb(23,23,23);">
+                                <img class="card-img w-100 d-block" src="img/ranks/warden.png">
+                                <div class="card-img-overlay d-md-flex justify-content-md-center align-items-md-center">
+                                    <h4 class="rank-text" style="color: rgb(255,255,255);text-align: center;">WARDEN</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="text-center py-4" style="background: #171717;">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-lg-3">
+                    <div class="col">
+                        <p class="text-muted my-2" style="color: rgb(230,243,255);">
+                            Made with &nbsp;<i class="fas fa-heart" style="color: rgb(255,15,0);"></i>
+                            &nbsp;by unexpected14
+                        </p>
+                    </div>
+                    <div class="col">
+                        <ul class="list-inline my-2">
+                            <li class="list-inline-item me-4">
+                                <div class="bs-icon-circle bs-icon-primary bs-icon" style="background: rgb(255,15,0);">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-facebook">
+                                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
+                                    </svg>
+                                </div>
+                            </li>
+                            <li class="list-inline-item me-4">
+                                <div class="bs-icon-circle bs-icon-primary bs-icon" style="background: rgb(255,15,0);">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-twitter">
+                                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path>
+                                    </svg>
+                                </div>
+                            </li>
+                            <li class="list-inline-item">
+                                <div class="bs-icon-circle bs-icon-primary bs-icon" style="background: rgb(255,15,0);">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-instagram">
+                                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
+                                    </svg>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <p class="text-muted my-2" >
+                            Copyright &nbsp;<i class="far fa-copyright"></i>
+                            &nbsp;play.minecraft.tn 2024
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="modal fade" role="dialog" tabindex="-1" id="modal-1" >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">MINECRAFT-TN INGAME &nbsp;RULES</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p style="font-weight: bold;color: rgb(255,15,0);">- Scamming</p>
+                        <p>Scamming ya3ni kif te9leb el players.</p>
+                        <p style="font-weight: bold;color: rgb(255,15,0);">- Bug / Glitch Abuse</p>
+                        <p>
+                            Bug Abuse ya3ni kif tal9a bug tfidek ou tfid players o5rin ou to93dou testa3mou feha. Kima duplication glitch.<br>
+                        </p>
+                        <p style="font-weight: bold;color: rgb(255,15,0);">
+                            - Inappropriate Stuff<br>
+                        </p>
+                        <p>
+                            Inappropriate Stuff ya3ni kif twarri 7aje mayhech mounasba siwa banya, skin, esmek wele ay 7aje<br>
+                        </p>
+                        <p style="font-weight: bold;color: rgb(255,15,0);">
+                            - Lag Machines/AFK Machines<br>
+                        </p>
+                        <p>
+                            Machines Ilagiw server mamnou3in! Machines Anti AFK mamnou3in zede!<br>
+                        </p>
+                        <p style="font-weight: bold;color: rgb(255,15,0);">- Scamming</p>
+                        <p>Scamming ya3ni kif te9leb el players.</p>
+                        <p style="font-weight: bold;color: rgb(255,15,0);">- Bug / Glitch Abuse</p>
+                        <p>
+                            Bug Abuse ya3ni kif tal9a bug tfidek ou tfid players o5rin ou to93dou testa3mou feha. Kima duplication glitch.<br>
+                        </p>
+                        <p style="font-weight: bold;color: rgb(255,15,0);">
+                            -Trapping<br>
+                        </p>
+                        <p>
+                            Trapping ya3ni kif ta7ser player fi blasa. Siwa tebni 7ofra bch ta7ser lplayer wele ay 7aje.<br>
+                        </p>
+                        <p style="font-weight: bold;color: rgb(255,15,0);">
+                            -Ban Evasion<br>
+                        </p>
+                        <p>
+                            Ban Evasion hiya kif tetbane mserver ou t7awel tod5ol marra o5ra.<br>
+                        </p>
+                        <p style="font-weight: bold;color: rgb(255,15,0);">-Mute Evasion</p>
+                        <p>Mute Evasion kif tekel mute fserver ou t7awel ta7ki marra o5ra.</p>
+                        <p style="font-weight: bold;color: rgb(255,15,0);">-Hacking</p>
+                        <p>
+                            Hacking ya3ni kif tsob 7aje lel minecraft tsahhallek fl3eb. (Schematica, Optifine and Shaders miselch ay 7aje o5ra LE!!).<br>
+                        </p>
+                        <p style="font-weight: bold;color: rgb(255,15,0);">
+                            -Auto-Click<br>
+                        </p>
+                        <p>
+                            Auto-Click hiya faze ta3malha bch souris mta3ek to93od tenzel mn8er mat7ot 3leha sob3ok<br>
+                        </p>
+                        <p style="font-weight: bold;color: rgb(255,15,0);">
+                            -Alting<br>
+                        </p>
+                        <p>
+                            Alting hiya kif yabda 3andek account/esm fl minecraft tal3ab bih ou ta3mel account/esm e5er. (Kif yelzmek ta3mel account e5er bellehi 9oulenna!)<br>
+                        </p>
+                        <p style="font-weight: bold;color: rgb(255,15,0);">-PVP Evasion</p>
+                        <p>PVP Evasion hiya kif tabda inti fl PVP arena ou 9bal matmout t7awel to5roj ml arena.</p>
+                        <p style="font-weight: bold;color: rgb(255,15,0);">-Bot/DDoS Attack</p>
+                        <p>
+                            Bot/DDoS Attack hiya kif tsayyeb bots/fake players lserver bch ifarg3ouh.<br>
+                        </p>
+                        <p style="font-weight: bold;color: rgb(255,15,0);">
+                            -Player Disturbing<br>
+                        </p>
+                        <p>
+                            5alliw lplayers raydhin ou mat9all9ouhomch.<br>
+                        </p>
+                        <p style="font-weight: bold;color: rgb(255,15,0);">
+                            -/fly only in Survival, Nether and End worlds for Premium<br>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="modal-2" >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">CHAT RULES</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Chat rules here.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="modal-3" >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">DISCORD RULES</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Discord rules here.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="modal-4" style="font-weight: bold;">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">COAL RANK</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            - 3andkom l7a9 fi 4 Homes (/sethome)<br>
+                            <br>
+                            - Tnejjmou tbi3ou 6 7ajet fl /ah (/ah sell)<br>
+                            <br>
+                            - Tnejjmou tkassrou spawners bSilk Touch<br>
+                            <br>
+                            - Tnejjmou tsta3mlou chestshop (Techriw ou tbi3ou 7ajet bsnada9)<br>
+                            <br>
+                            - 3andkom l7a9 fi /disposal command (Tlawwa7 beha litems elli matest7a99homch)<br>
+                            <br>
+                            - Tnejjmou t7ellou Coal Crate (/warp crates)<br>
+                            <br>
+                            - Mefta7 mta3 Coal Crate (/kit claim coalkey)<br>
+                            <br>
+                            - 3andkom l7a9 fl command /sell hand (tbi3lek l7aje elli fi iddek l/shop)<br>
+                            <br>
+                            - 3andkom l7a9 fl command /sell all (Tnejjmou tbi3ou kol chay fl inventory mta3kom elli ytba3ou f/shop)<br>
+                            <br>
+                            - 3andkom l7a9 fl command /sell handall (Tbi3elkom litem elli chaddinha fi idekom lkol mlinventory l/shop)<br>
+                            <br>- Tnejjmou tsta3mlou trade (/trade)
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="modal-5" >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">COPPER RANK</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            - Tbi3ou 7 Item fl /ah<br>
+                            <br>
+                            - T7ellou Copper Crate<br>
+                            <br>
+                            - Mefta7 mta3 Copper Crate (/kit claim copperkey)<br>
+                            <br>
+                            - T7ottou 5 pwarps<br>
+                            <br>
+                            - 5 Sethomes<br>
+                            <br>
+                            - Tnejjem ta3mlou warps mta3kom<br>
+                            <br>
+                            - Kif Tmoutou, 7ajetkom ijiw fi sandou9 (Players inajjmou i7ellouh sandou9)<br>
+                            <br>
+                            - Tnejjmou Ta3mlou PVP (/pvp)<br>
+                            <br>- Ou faydat lkol mta3 Coal Rank
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="modal-6" >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">COPPER RANK</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            - Tnejjmou tbaddlou spawners bl spawn eggs<br>
+                            <br>
+                            - Iron Crate<br>
+                            <br>
+                            - Mefta7 mta3 Iron Crate (/kit claim ironkey)<br>
+                            <br>
+                            - T7ottou 8 Items fl /ah<br>
+                            <br>
+                            - Ta3mlou demote lel players flgang mta3ek (/g demote)<br>
+                            <br>
+                            - Troddou player fl gang mta3kom leader (/g leader)<br>
+                            <br>
+                            - Ta3mlou level up lel gang mta3kom (/g levelup)<br>
+                            <br>
+                            - Ta3mlou promote lel players fl gang mta3kom (/g promote)<br>
+                            <br>
+                            - 6 Pwarps (/pwarp set)<br>
+                            <br>
+                            - Sandou9 Elli ijikom kif tmoutou ytsakker, players maynejjmouch i7ellouh<br>
+                            <br>- Ou faydat lkol mta3 Copper Rank
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="modal-7" >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">LAPIS RANK</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            - 10 Items fl /ah<br>
+                            <br>
+                            - 7 Pwarps<br>
+                            <br>
+                            - 7 Sethomes<br>
+                            <br>
+                            - 4 Jobs<br>
+                            <br>
+                            - Lapis Crate<br>
+                            <br>
+                            - Mefta7 mta3 Lapis Crate (/kit claim lapizkey)<br>
+                            <br>
+                            - T7ottou som da5len lpwarps mta3kom<br>
+                            <br>
+                            - Tnejjmou t7ellou PVP (/pvp)<br>
+                            <br>
+                            - Tnejjmou Tchoufou status mta3 lPVP mta3kom (Ken lpvp mta3kom ON wele OFF)<br>
+                            <br>- Ou faydat lkol mta3 Iron Rank
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="modal-8" >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">PRISMARINE RANK</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            - 11 Items fl /ah<br>
+                            <br>
+                            - 8 Pwarps<br>
+                            <br>
+                            - 8 Sethomes<br>
+                            <br>
+                            - 5 Jobs<br>
+                            <br>
+                            - Lapis Crate<br>
+                            <br>
+                            - Mefta7 mta3 Prismarine Crate (/kit claim prismarinekey)<br>
+                            <br>- Ou faydat lkol mta3 Lapis Rank
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="modal-9" >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">GOLD RANK</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            - Sondou9 mta3kom kif tmouou (wen 7ajetkom yt7attou fi3odh mayti7ou) ytsakker ou 7ad maynejjem i7ellou<br>
+                            <br>
+                            - 12 Items fl /ah<br>
+                            <br>
+                            - 9 Pwarp<br>
+                            <br>
+                            - 9 Sethomes<br>
+                            <br>
+                            - Gold Crate<br>
+                            <br>
+                            - Mefta7 mta3 Gold Crate (/kit claim goldkey)<br>
+                            <br>- Ou faydat lkol mta3 Prismarine Rank
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="modal-10" >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">QUARTZ RANK</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            - 15 Items fl /ah<br>
+                            <br>
+                            - 10 Pwarps<br>
+                            <br>
+                            - 10 Sethomes<br>
+                            <br>
+                            - 6 Jobs<br>
+                            <br>
+                            - Quartz Crate<br>
+                            <br>
+                            - Mefta7 mta3 Quartz Crate (/kit claim quartzkey)<br>
+                            <br>- Ou faydat lkol mta3 Gold Rank
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="modal-11" >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">EMETHYST RANK</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            - 17 Items fl /ah<br>
+                            <br>
+                            - 11 Pwarps<br>
+                            <br>
+                            - 11 Sethomes<br>
+                            <br>
+                            - 7 Jobs<br>
+                            <br>
+                            - Amethyst Crate<br>
+                            <br>
+                            - Mefta7 mta3 Amethyst Crate (/kit claim amethystkey)<br>
+                            <br>- Ou faydat lkol mta3 Quartz Rank
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="modal-12" >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">DIAMOND RANK</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            - 20 Items fl /ah<br>
+                            <br>
+                            - 12 Pwarps<br>
+                            <br>
+                            - 12 Sethomes<br>
+                            <br>
+                            - Diamond Crate<br>
+                            <br>
+                            - Mefta7 mta3 Diamond Crate (/kit claim diamondkey)<br>
+                            <br>
+                            - Tnejjmou Tchoufou status PVP mta3 players o5rin<br>
+                            <br>- Ou faydat lkol mta3 Amethyst Rank
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="modal-13" >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">EMERALD RANK</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            - 25 Items fl /ah<br>
+                            <br>
+                            - 15 Pwarps<br>
+                            <br>
+                            - 15 Sethomes<br>
+                            <br>
+                            - 8 Jobs<br>
+                            <br>
+                            - Emerald Crate<br>
+                            <br>
+                            - Tnejjmou tasn3ou Item Frame mo5tafya<br>
+                            <br>
+                            - Mefta7 mta3 Emerald Crate (/kit claim emeraldkey)<br>
+                            <br>- Ou faydat lkol mta3 Diamond Rank
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="modal-14" >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">NETHERITE RANK</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            - 30 Items fl /ah<br>
+                            <br>
+                            - 20 Pwarps<br>
+                            <br>
+                            - 20 Sethomes<br>
+                            <br>
+                            - 10 Jobs<br>
+                            <br>
+                            - Netherite Crate<br>
+                            <br>
+                            - Mefta7 mta3 Netherite Crate (/kit claim netheritekey)<br>
+                            <br>
+                            - Tnejjmou tkassrou spawners mn8er silk touch<br>
+                            <br>- Ou faydat lkol mta3 Emerald Rank
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="modal-15">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">THIEF RANK</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            - Thief Crate<br>
+                            <br>- Thief Crate Key (/kit claim thiefkey)
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="modal-16">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">KNIGHT RANK</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            - Knight Crate<br>
+                            <br>- Mefta7 Knight Crate (/kit claim knightkey)
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="modal-17">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">DEMON RANK</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            - Demon Crate<br>
+                            <br>
+                            - Demon Crate Key (/kit claim demonkey)<br>
+                            <br>
+                            - Tnejjmou Tbaddlou spawners bl eggs<br>
+                            <br>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="modal-18">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">ANGEL RANK</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            - Angel Crates<br>
+                            <br>- Mefta7 Angel Crate (/kit claim angelkey)
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="modal-19">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">ARCHANGEL RANK</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            - Archangel Crate<br>
+                            <br>- Mefta7 Archangel Crate (/kit claim archangelkey)
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            let clip = new ClipboardJS("#left");
+            let discord = new ClipboardJS("#right");
+        </script>
+        <a class="cd-top js-cd-top cd-top--fade-out cd-top--show" style="background-image: url(&quot;/img/cd-top-arrow.svg&quot;);border-radius: 1rem;" href="#0">Top</a>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
