@@ -8,7 +8,7 @@ async function showCopied() {
     e.innerHTML = "play.minecraft.tn"
 }
 async function showCopiedDiscord() {
-    window.open("https://discord.gg/xceg9Aef94", "_blank")
+    window.open("https://discord.gg/mctn", "_blank")
 }
 window.innerWidth < 768 && [].slice.call(document.querySelectorAll("[data-bss-disabled-mobile]")).forEach((function(e) {
     e.classList.remove("animated"),
