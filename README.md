@@ -113,14 +113,14 @@ To get a local copy up and running, follow these steps:
 
 Clone the repository:
 
-sh
-Copier le code
+```Git
 git clone https://github.com/Ali-cheikh/-Minecraft-TN
+```
 Navigate to the project directory:
 
-sh
-Copier le code
+```Git
 cd MinecraftTN-Website
+```
 Open index.html in your browser to view the website.
 
 Usage
