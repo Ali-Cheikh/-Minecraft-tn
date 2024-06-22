@@ -92,24 +92,45 @@ To join our server, simply add the server IP **play.minecraft.tn** to your Minec
 
 We look forward to seeing you in the game!
 
-About the Project
-MinecraftTN is a 24/7 online Tunisian Minecraft server that offers various types of games, including Survival, Minigames, Towny, and more. The server is frequently updated with the latest versions of Minecraft, and everyone is welcome to join and enjoy the fun while following the community rules.
+## About the Project
 
-Features
-Server Information: Display server IP and player count.
-Discord Integration: Show Discord server link and member count.
-Game Modes: Information about different game modes available on the server.
-Ranks and Perks: Detailed information about server ranks and their perks.
-Responsive Design: Fully responsive design with Bootstrap 5.
-Technologies Used
-HTML5: Markup language for structuring and presenting content.
-CSS3: Styling language for designing the website.
-Bootstrap 5: Front-end framework for responsive design.
-JavaScript: Programming language for interactive elements.
-AOS (Animate On Scroll): Library for scroll animations.
-Font Awesome: Icon library for scalable vector icons.
-Installation
+The server is frequently updated with the latest versions of Minecraft, and everyone is welcome to join and enjoy the fun .
+
+### Features
+
+- **Server Information:** Display server IP and player count.
+- **Discord Integration:** Show Discord server link and member count.
+- **Game Modes:** Information about different game modes available on the server.
+- **Ranks and Perks:** Detailed information about server ranks and their perks.
+- **Responsive Design:** Fully responsive design with Bootstrap 5.
+
+### Technologies Used
+
+- **HTML5:**
+  ![HTML5](https://img.shields.io/badge/HTML-5-orange?style=flat-square&logo=html5) Markup language for structuring and presenting content.
+  
+- **CSS3:** 
+  ![CSS3](https://img.shields.io/badge/CSS-3-blue?style=flat-square&logo=css3) Styling language for designing the website.
+  
+- **Bootstrap 5:**
+  ![Bootstrap 5](https://img.shields.io/badge/Bootstrap-5-purple?style=flat-square&logo=bootstrap) Front-end framework for responsive design.
+  
+- **JavaScript:**
+  ![JavaScript](https://img.shields.io/badge/JavaScript-yellow?style=flat-square&logo=javascript) Programming language for interactive elements.
+  
+- **AOS (Animate On Scroll):**
+  ![AOS](https://img.shields.io/badge/AOS-green?style=flat-square) Library for scroll animations.
+  
+- **Font Awesome:**
+  ![Font Awesome](https://img.shields.io/badge/Font%20Awesome-blueviolet?style=flat-square&logo=font-awesome) Icon library for scalable vector icons.
+
+### Installation
+
 To get a local copy up and running, follow these steps:
+
+1. Clone the repository.
+2. Navigate to the project directory.
+3. Open the project in your preferred code editor.
 
 Clone the repository:
 
@@ -137,6 +158,6 @@ Push to the Branch (git push origin feature/AmazingFeature)
 Open a Pull Request
 
 Contact
-Your Name - alouloucheikh05@gmail.com
+Email Me 📧 - alouloucheikh05@gmail.com
 
 Project Link: [Minecraft-tn.com](https://minecraft-tn.onrender.com/) hosted onrender
