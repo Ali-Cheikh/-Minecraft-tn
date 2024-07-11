@@ -172,8 +172,7 @@ function() {
                     }
                 }
                 ,
-                t.open("GET", "https://mcapi.us/server/status?ip=" + this.ip + "&port=" + this.port),
-                t.send()
+                t.open("GET", "https://mcapi.us/server/status?ip=" + this.ip + "&port=" + this.port),t.send()
             }
         }]),
         t
